@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+.dashboard-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+}
+h2, h3 {
+    color: #333;
+}
+p {
+    color: #666;
+}
+#elections-container {
+    margin-top: 20px;
+}
+button {
+    display: block;
+    width: 100px;
+    height: 30px;
+    margin: 20px 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    border: none;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #444;
+}
