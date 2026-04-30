@@ -25,14 +25,14 @@ The project demonstrates:
 ## Repository Structure
 
 ```text
-CW2_mss49/
+election-vote-manager/
 |- README.md
-|- mss49.sql                  # SQL schema + seed data
-|- cw2/                       # Main Gradle multi-module project
-   |- app/                    # Web application (controllers, services, repositories, views)
-   |- list/                   # Custom linked-list module
-   |- utilities/              # Utility module used by app
-   |- build-logic/            # Convention plugins for build configuration
+|- mss49.sql                            # SQL schema + seed data
+|- election-vote-manager/              # Main Gradle multi-module project
+   |- app/                              # Web application (controllers, services, repositories, views)
+   |- list/                             # Custom linked-list module
+   |- utilities/                        # Utility module used by app
+   |- build-logic/                      # Convention plugins for build configuration
 ```
 
 ## Key Application Features
@@ -54,10 +54,10 @@ CW2_mss49/
 
 JSP views are located in:
 
-- `cw2/app/src/main/webapp/WEB-INF/views/login.jsp`
-- `cw2/app/src/main/webapp/WEB-INF/views/registration.jsp`
-- `cw2/app/src/main/webapp/WEB-INF/views/votedashboard.jsp`
-- `cw2/app/src/main/webapp/WEB-INF/views/officerdashboard.jsp`
+- `election-vote-manager/app/src/main/webapp/WEB-INF/views/login.jsp`
+- `election-vote-manager/app/src/main/webapp/WEB-INF/views/registration.jsp`
+- `election-vote-manager/app/src/main/webapp/WEB-INF/views/votedashboard.jsp`
+- `election-vote-manager/app/src/main/webapp/WEB-INF/views/officerdashboard.jsp`
 
 ## Prerequisites
 
@@ -71,7 +71,7 @@ JSP views are located in:
 
 ```bash
 git clone <your-repo-url>
-cd CW2_mss49
+cd election-vote-manager
 ```
 
 ### 2) Create and seed the database
@@ -79,12 +79,12 @@ cd CW2_mss49
 Import `mss49.sql` into MySQL:
 
 ```sql
-SOURCE /absolute/path/to/CW2_mss49/mss49.sql;
+SOURCE /absolute/path/to/election-vote-manager/mss49.sql;
 ```
 
 ### 3) Configure database connection
 
-Update `cw2/app/src/main/resources/application.properties` as needed:
+Update `election-vote-manager/app/src/main/resources/application.properties` as needed:
 
 - `spring.datasource.url`
 - `spring.datasource.username`
@@ -100,7 +100,7 @@ Make sure the database name in the URL matches your imported schema.
 
 ### 4) Build the project
 
-From `cw2/`:
+From `election-vote-manager/`:
 
 ```bash
 # Windows
@@ -112,7 +112,7 @@ gradlew.bat build
 
 ### 5) Run the application
 
-From `cw2/`:
+From `election-vote-manager/`:
 
 ```bash
 # Windows
