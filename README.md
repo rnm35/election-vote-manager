@@ -2,8 +2,6 @@
 
 Election Vote Manager is a Java-based web application for managing a simple election workflow end-to-end, including voter onboarding, authentication, ballot submission, and officer-side election operations.
 
-This repository started as coursework and has been renamed/restructured for use as an individual portfolio project.
-
 ## Project Overview
 
 The project demonstrates:
@@ -146,18 +144,4 @@ After startup, open:
 - introduce integration tests for critical election flows
 - externalize secrets and database config via environment variables
 - modernize Spring/Gradle dependency versions
-
-## Portfolio Context
-
-This project is presented as an individual engineering project focused on:
-
-- full-stack Java web development
-- layered architecture and modular design
-- practical CRUD + workflow orchestration
-- database-backed business logic in an election domain
-
-## License
-
-No license has been added yet.  
-If you plan to make this public, add a license file (for example MIT) before publishing.
 
